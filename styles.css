@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width:33.33%;
+  padding: 1%;
+  position: relative;
+  transition: .3s all ease;
+}
+
+.movie:hover{
+  transform:scale(1.1);
+  transform: ;
+}
+
+
+.number {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+}
+
+.number span {
+  margin: auto;
+}
+
+@media (max-width:450px){
+  .movie{
+    width:50%;
+  }
+  .movie:hover{
+    transform: scale(1.02);
+  }
+}
