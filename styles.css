@@ -7,6 +7,12 @@ html {
 
 body {
   font-family: sans-serif;
+  background: linear-gradient(to bottom, #0abab5, #FFFFFF);
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: rgb(255, 255, 255);
 }
 
 img {
@@ -40,16 +46,21 @@ img {
   transform: ;
 }
 
+.movie:active{
+  transform:scale(1.5);
+}
+
 
 .number {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  background: red;
+  background: rgb(238, 238, 238);
+  opacity: .6;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
 }
 
